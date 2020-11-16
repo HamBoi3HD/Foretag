@@ -46,27 +46,57 @@ header, h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: fill;
     max-height: 300px;
 }
 .splide {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 12%;
+    margin-right: 12%;
     margin-top: 25px;
+}
+.box img {
+    object-fit: scale-down;
 }
 .cont {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-right: 10%;
     margin-left: 10%;
+    margin-top: 30px;
+    max-width: 80%;
 }
 .box {
     display: flex;
-    max-width: 300px;
-    border: 3px solid black;
-    margin-top: 20px;
-    padding: 10px;
-    
+    border: 3px solid rgb(0, 0, 0);
+    padding: 20px;
+    flex-direction: column;
+    margin: 10px;
+}
+@media only screen and (max-width: 750px) {
+    .box {
+        width: 80%;
+    }
 }
 .pris {
     float: right;
+}
+footer {
+    padding: 50px;
+    background-color: royalblue;
+    display: flex;
+}
+.omoss {
+    max-width: 45%;
+}
+.text1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.links {
+    padding-left: 15%;
+    
+    list-style: none;
+}
+.links1 {
+    text-decoration: none;
 }
