@@ -68,9 +68,6 @@ header, h1 {
 .splide {
     width: 100%;
 }
-.box img {
-    object-fit: scale-down;
-}
 .cont {
     display: flex;
     flex-wrap: wrap;
@@ -86,6 +83,10 @@ header, h1 {
     padding: 20px;
     flex-direction: column;
     margin: 10px;
+    color: white;
+}
+.box img {
+    width: 230px;
 }
 @media only screen and (max-width: 750px) {
     .box {
@@ -121,4 +122,8 @@ footer {
 }
 .links1 :hover {
     text-decoration: underline;
+}
+.rubrik {
+    margin-left: 10%;
+    margin-top: 30px;
 }
