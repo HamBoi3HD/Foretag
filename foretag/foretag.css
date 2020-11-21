@@ -3,6 +3,7 @@ html, body {
     background-color: rgb(48, 50, 59);
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -10,46 +11,68 @@ header {
     display: flex;
     align-items: center;
     top: 0;
+    flex: 1;
     background-color: rgb(22, 22, 22);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 99;
     box-sizing: border-box;
+}
+.navbar {
+    flex: 1;
 }
 .fakeheader {
     position: relative;
     z-index: 98;
     
 }
-header, h1 {
+header h1 {
     color: #fff;
     padding: 0 10px;
     margin: 0%;
     transform: translateY(-4px);
+    position: absolute;
+}
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+    transition: background .1s ease-out;
+}
+header h1 a :hover {
+    background: rgb(224, 27, 27);
 }
 .menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex: 1;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1350px) {
+    header h1 {
+        position: static;
+    }
+}
+@media only screen and (max-width: 1100px) {
     header {
         flex-direction: column;
+    }
+    header, h1 {
+        transform: translateY(-0);
     }
 }
 .menu .menu-item {
     color: #ffffff;
-    display: inline-block;
-    text-decoration: none;
+    display: flex;
     font-size: 18px;
     padding: 30px;
     transition: background .1s ease-out;
+    justify-content: center;
+}
+.menu a {
+    text-decoration: none;
 }
 .menu .menu-item:hover {
     background: rgb(224, 27, 27);
-}
-.menu a:hover {
-    text-decoration: underline;
 }
 .search {
     font-size: 16px;
@@ -77,20 +100,31 @@ header, h1 {
     margin-top: 30px;
     max-width: 80%;
 }
-.box {
+.cont a, .cont2 a {
+    text-decoration: none;
+}
+.box, .box1 {
     display: flex;
-    border: 3px solid rgb(0, 0, 0);
+    border: 4px solid rgb(0, 0, 0);
     padding: 20px;
     flex-direction: column;
     margin: 10px;
     color: white;
+    width: 240px;
 }
-.box img {
-    width: 230px;
+.box img, .box1 img {
+    margin: 0 auto;
+    max-width: 220px;
+    width: 100%;
 }
 @media only screen and (max-width: 750px) {
     .box {
         width: 80%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    header:not(.fakeheader) {
+        display: none;
     }
 }
 .pris {
@@ -100,6 +134,7 @@ footer {
     padding: 50px;
     background-color: rgb(27, 57, 139);
     display: flex;
+    margin-top: 50px;
 }
 .omoss {
     max-width: 45%;
@@ -123,7 +158,42 @@ footer {
 .links1 :hover {
     text-decoration: underline;
 }
-.rubrik {
+.rubrik, .rubrik2 {
+    margin-top: 50px;
+    margin-left: 5%;
+    color: #fff;
+}
+@media only screen and (max-width: 750px) {
+    .omoss {
+        display: none;
+    }
+    .links {
+        padding: 5%;
+    }
+}
+.bigflex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: #fff;
+}
+.tipsbox {
+    display: flex;
+    margin-top: 30px;
+    flex: wrap;
     margin-left: 10%;
+    width: 93%;
+    overflow: auto;
+    padding-right: 10px;
+}
+.tipsbox a {
+    text-decoration: none;
+}
+.cont2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
     margin-top: 30px;
 }
