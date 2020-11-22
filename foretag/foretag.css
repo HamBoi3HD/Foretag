@@ -114,10 +114,6 @@ header h1 a :hover {
     max-width: 220px;
     width: 100%;
 }
-.orange {
-    background-color: orange;
-    clip-path: polygon(100% 0, 100% 81%, 0 100%, 0 17%);
-}
 @media only screen and (max-width: 750px) {
     .box {
         width: 80%;
@@ -151,11 +147,11 @@ footer {
 }
 .links1 :link{
     text-decoration: none;
-    color: rgb(34, 34, 34);
+    color: rgb(20, 20, 20);
 }
 .links1 :visited{
     text-decoration: none;
-    color: rgb(34, 34, 34);
+    color: rgb(20, 20, 20);
 }
 .links1 :hover {
     text-decoration: underline;
@@ -183,10 +179,8 @@ footer {
     display: flex;
     margin-top: 30px;
     flex: wrap;
-    margin-left: 10%;
-    width: 93%;
+    padding: 100px 88% 100px 10%;
     overflow: auto;
-    padding-right: 10px;
 }
 .tipsbox a {
     text-decoration: none;
@@ -230,7 +224,6 @@ footer {
     text-decoration: none;
 }
 .button button {
-    display: block;
     align-self: flex-end;
     background: none;
     border: 0.1em solid #FFFFFF;
@@ -242,4 +235,37 @@ footer {
     cursor: pointer;
     color: black;
     background-color: white;
+}
+.flex1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+}
+.flex1 input {
+    margin: 10px;
+    font-size: 16px;
+}
+.in1 {
+    padding: 0px 200px 15px 0px;
+}
+.in2 {
+    padding: 0px 200px 150px 0px;
+}
+.orange {
+    background-color: #EF8533;
+    clip-path: polygon(100% 0, 100% 81%, 0 100%, 0 17%);
+}
+.white {
+    background-color: #EEEEC5;
+    clip-path: polygon(100% 0, 100% 81%, 0 100%, 0 17%);
+}
+.lblue {
+    background-color: #1B398B;
+    clip-path: polygon(100% 0, 100% 81%, 0 100%, 0 17%);
+}
+@media only screen and (max-width: 1100px) {
+    .orange, .white, .lblue {
+        clip-path: none;
+    }
 }
