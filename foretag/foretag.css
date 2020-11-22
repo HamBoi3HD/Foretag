@@ -74,10 +74,6 @@ header h1 a :hover {
 .menu .menu-item:hover {
     background: rgb(224, 27, 27);
 }
-.search {
-    font-size: 16px;
-    
-}
 .mySlides {
     position: relative;
     display: block;
@@ -86,7 +82,7 @@ header h1 a :hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-height: 400px;
+    max-height: 500px;
 }
 .splide {
     width: 100%;
@@ -105,6 +101,7 @@ header h1 a :hover {
 }
 .box, .box1 {
     display: flex;
+    background-color:  rgb(42, 43, 51);
     border: 4px solid rgb(0, 0, 0);
     padding: 20px;
     flex-direction: column;
@@ -116,6 +113,10 @@ header h1 a :hover {
     margin: 0 auto;
     max-width: 220px;
     width: 100%;
+}
+.orange {
+    background-color: orange;
+    clip-path: polygon(100% 0, 100% 81%, 0 100%, 0 17%);
 }
 @media only screen and (max-width: 750px) {
     .box {
@@ -131,6 +132,7 @@ header h1 a :hover {
     float: right;
 }
 footer {
+    color: black;
     padding: 50px;
     background-color: rgb(27, 57, 139);
     display: flex;
@@ -196,4 +198,48 @@ footer {
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 30px;
+}
+.produktsida {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.produkt {
+    max-width: 700px;
+    margin: 60px;
+}
+.ptext {
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    margin: 15px;
+}
+.ptext li {
+    list-style: none;
+}
+.ptext a {
+    align-self: flex-end;
+}
+@media only screen and (max-width: 700px) {
+    .produkt {
+        width: 100%;
+    }
+}
+.button {
+    text-decoration: none;
+}
+.button button {
+    display: block;
+    align-self: flex-end;
+    background: none;
+    border: 0.1em solid #FFFFFF;
+    color: #fff;
+    transition: all 0.2s;
+    padding: 1.5em 4em;
+}
+.button :hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
 }
